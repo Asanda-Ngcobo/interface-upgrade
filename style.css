@@ -1,0 +1,148 @@
+*
+{
+
+font-size: medium;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+@media screen and (max-width: 412px), 
+       screen and (max-height: 1000px) {
+   body{
+      background-color: antiquewhite;
+      height: 60%;
+      
+   }
+       .menu{
+        right: 10px;
+        width: 100%;
+       }
+
+        .menu ul li{
+            display: inline;
+            border-radius: 40px;
+            margin: 5px;
+            text-align: center;
+            padding: 10px;
+            font-size: x-small;
+            width: 15%;
+            height: 30px;
+            cursor: pointer;
+            right: 0;
+           
+          
+            
+        }
+        .menu ul li a{
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+           
+        }
+
+        .menu ul li a:hover{
+            font-weight: bolder;
+            color: beige;
+        }
+ .aboutus{
+    background-color:darkseagreen;
+
+ }
+
+ .maths{
+    background-color: violet;
+ }
+
+ .physics{
+    background-color: darkslategrey;
+ }
+
+ .chem{
+    background-color:darkorange;
+ }
+
+ .biology{
+    background-color: darkgreen;
+ }
+
+.PP{
+   background-color: azure;
+}
+ 
+ .logo{
+    font-family:'Times New Roman', Times, serif ;
+    border-bottom: solid 1px ghostwhite;
+    top: 15px;
+    font-size: 30px;
+    margin-left: 45%;
+    font-weight: 700;
+ }
+ .logo img{
+    width: 15px;
+    padding-left: 6px;
+    
+ }
+
+ .statement{
+   font-size: 12px;
+   text-align: center;
+   }
+.Grid-1 h1{
+text-align: center;
+}
+
+.backgroundimg img{
+   width:100%;
+   display: block;
+    border-radius: 10px;
+}
+
+.backgroundimg{
+   position:relative;
+   overflow: hidden;
+}
+
+
+.layer h3{
+   text-align: center;
+}
+.footer{
+  background-color: antiquewhite;
+  border-radius: 10px;
+   bottom: 0;
+   position: fixed;
+   width: 50%;
+   left: 25%;
+   display: inline;
+
+ 
+}
+ .footer img{
+   padding: 10px;
+   width: 15px;
+   
+ }
+
+.media-scroller{
+   display: grid;
+   grid-auto-flow: column;
+  
+   gap:var(--size-3);
+
+   overflow-y: auto;
+  
+ 
+}
+
+.media-element img{
+width: 200px;
+height: 150px;
+border-radius: 15px;
+padding: 10px;
+
+}
+
+
+ 
+}
+
