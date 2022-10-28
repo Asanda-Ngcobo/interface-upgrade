@@ -53,6 +53,15 @@
             </div>
 
     </div>
+    
+            
+      <!---share-->
+      <div class="share-container">
+        <p>Click the share button below to invite your friends, studymates and/or classmates to the site via Whatsapp</p>
+        <button class="share-btn"><a href="whatsapp://send?text=http://www.ecolie.co.za"       data-action="share/whatsapp/share"  
+            target="_blank"> Share </a></button>
+        
+    </div>
 <!-----footer--------->
     <div class="footer">
 
@@ -65,6 +74,26 @@
     </div>
   
 
-    <script src="main.js"></script>
+  
 </body>
+    <script>
+    //selecting elements
+const shareContainer = document.querySelector(".share-container");
+const shareButton = document.querySelector(".share-btn");
+const btnCloseModal = document.querySelector(".closebtn");
+    shareButton.addEventListener("click", ()=> {
+        shareContainer.classList.remove("high");
+        localStorage.setItem("shareBunnerDisplayed", "true");
+    });
+    
+    setTimeout(()=> {
+        if(!localStorage.getItem("shareBunnerDisplayed")){
+        shareContainer.classList.add("high")
+        }
+        
+    }, 2000);
+
+   
+   
+    </script>
 </html>
